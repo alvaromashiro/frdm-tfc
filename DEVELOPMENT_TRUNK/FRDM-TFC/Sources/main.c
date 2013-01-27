@@ -41,9 +41,6 @@ int main(void)
 				else
 					TFC_BAT_LED2_OFF;
 								
-					
-				//TFC_SetMotorPWM(0,0); //Make sure motors are off
-				TFC_HBRIDGE_DISABLE;
 			
 				
 				break;
