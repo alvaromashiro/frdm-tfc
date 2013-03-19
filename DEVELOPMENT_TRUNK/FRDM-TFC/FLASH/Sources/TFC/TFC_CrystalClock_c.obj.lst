@@ -141,7 +141,7 @@
   38 0004 02AF     		add	r7, sp, #8
   39              	.LCFI2:
   40              		.cfi_def_cfa 7, 8
- 105:../Sources/TFC/TFC_CrystalClock.c **** 	pll_init(8000000, HIGH_GAIN, CRYSTAL, 4, 24, MCGOUT);
+ 105:../Sources/TFC/TFC_CrystalClock.c **** 	pll_init(8000000, LOW_POWER, CRYSTAL, 4, 24, MCGOUT);
   41              		.loc 1 105 0
   42 0006 064B     		ldr	r3, .L2
   43 0008 1822     		mov	r2, #24
@@ -149,7 +149,7 @@
   45 000c 0122     		mov	r2, #1
   46 000e 0192     		str	r2, [sp, #4]
   47 0010 181C     		mov	r0, r3
-  48 0012 0121     		mov	r1, #1
+  48 0012 0021     		mov	r1, #0
   49 0014 0122     		mov	r2, #1
   50 0016 0423     		mov	r3, #4
   51 0018 FFF7FEFF 		bl	pll_init
@@ -10141,99 +10141,99 @@
  8076              		.text
  8077              	.Letext0:
  8078              		.file 2 "C:/Freescale/CW MCU v10.3/MCU/ARM_GCC_Support/ewl/EWL_C/include/cstdint"
- 8079              		.file 3 "C:/Users/plexu_000/Dropbox/FRDM-TFC/SRC/FRDM-TFC/Project_Headers/MKL25Z4.h"
+ 8079              		.file 3 "C:/ELI/BUSINESS/CLIENT_DATA/FREESCALE/frdm-tfc__google-code/DEVELOPMENT_TRUNK/FRDM-TFC/Pr
 DEFINED SYMBOLS
                             *ABS*:00000000 TFC_CrystalClock.c
                             *COM*:00000001 drs_val
                             *COM*:00000001 dmx32_val
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:20     .text.TFC_InitClock:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:25     .text.TFC_InitClock:00000000 TFC_InitClock
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:70     .text.pll_init:00000000 pll_init
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:59     .text.TFC_InitClock:00000020 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:65     .text.pll_init:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:594    .text.pll_init:00000324 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:612    .text.pll_init:00000364 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:903    .text.pll_init:0000053c $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:910    .text.pee_pbe:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:915    .text.pee_pbe:00000000 pee_pbe
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1040   .text.pee_pbe:000000a8 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1046   .text.pbe_pee:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1051   .text.pbe_pee:00000000 pbe_pee
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1266   .text.pbe_pee:0000013c $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1272   .text.pbe_fbe:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1277   .text.pbe_fbe:00000000 pbe_fbe
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1406   .text.pbe_fbe:000000ac $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1412   .text.fbe_pbe:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1417   .text.fbe_pbe:00000000 fbe_pbe
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1757   .text.fbe_pbe:00000208 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1767   .text.pbe_blpe:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1772   .text.pbe_blpe:00000000 pbe_blpe
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1851   .text.pbe_blpe:00000064 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1856   .text.blpe_pbe:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:1861   .text.blpe_pbe:00000000 blpe_pbe
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:2173   .text.blpe_pbe:000001dc $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:2181   .text.blpe_fbe:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:2186   .text.blpe_fbe:00000000 blpe_fbe
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:2315   .text.blpe_fbe:000000b0 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:2321   .text.fbe_blpe:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:2326   .text.fbe_blpe:00000000 fbe_blpe
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:2405   .text.fbe_blpe:00000064 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:2410   .text.fbe_fei:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:2415   .text.fbe_fei:00000000 fbe_fei
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:7360   .text.fll_freq:00000000 fll_freq
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:2655   .text.fbe_fei:00000158 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:2663   .text.fei_fbe:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:2668   .text.fei_fbe:00000000 fei_fbe
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:3153   .text.fei_fbe:000002e4 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:3171   .text.fbe_fee:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:3176   .text.fbe_fee:00000000 fbe_fee
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:3376   .text.fbe_fee:00000130 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:3382   .text.fee_fbe:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:3387   .text.fee_fbe:00000000 fee_fbe
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:3511   .text.fee_fbe:000000a8 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:3517   .text.fbe_fbi:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:3522   .text.fbe_fbi:00000000 fbe_fbi
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:3936   .text.fbe_fbi:00000268 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:3946   .text.fbi_fbe:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:3951   .text.fbi_fbe:00000000 fbi_fbe
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:4446   .text.fbi_fbe:000002f4 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:4464   .text.fbi_blpi:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:4469   .text.fbi_blpi:00000000 fbi_blpi
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:4579   .text.fbi_blpi:0000009c $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:4584   .text.blpi_fbi:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:4589   .text.blpi_fbi:00000000 blpi_fbi
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:4699   .text.blpi_fbi:0000009c $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:4704   .text.fbi_fee:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:4709   .text.fbi_fee:00000000 fbi_fee
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:5215   .text.fbi_fee:00000314 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:5231   .text.fbi_fee:0000034c $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:5267   .text.fbi_fee:0000037c $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:5272   .text.fee_fbi:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:5277   .text.fee_fbi:00000000 fee_fbi
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:5660   .text.fee_fbi:00000234 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:5670   .text.fbi_fei:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:5675   .text.fbi_fei:00000000 fbi_fei
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:5913   .text.fbi_fei:00000154 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:5921   .text.fei_fbi:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:5926   .text.fei_fbi:00000000 fei_fbi
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:6271   .text.fei_fbi:00000200 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:6281   .text.fei_fee:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:6286   .text.fei_fee:00000000 fei_fee
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:6747   .text.fei_fee:000002c4 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:6765   .text.fee_fei:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:6770   .text.fee_fei:00000000 fee_fei
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:6927   .text.fee_fei:000000d8 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:6940   .text.atc:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:6945   .text.atc:00000000 atc
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:7697   .text.what_mcg_mode:00000000 what_mcg_mode
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:7339   .text.atc:0000027c $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:7355   .text.fll_freq:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:7677   .text.fll_freq:000001ac $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:7692   .text.what_mcg_mode:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:8010   .text.what_mcg_mode:000001d0 $d
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:8015   .text.clk_monitor_0:00000000 $t
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:8020   .text.clk_monitor_0:00000000 clk_monitor_0
-C:\Users\PLEXU_~1\AppData\Local\Temp\ccufP0Di.s:8072   .text.clk_monitor_0:0000003c $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:20     .text.TFC_InitClock:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:25     .text.TFC_InitClock:00000000 TFC_InitClock
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:70     .text.pll_init:00000000 pll_init
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:59     .text.TFC_InitClock:00000020 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:65     .text.pll_init:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:594    .text.pll_init:00000324 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:612    .text.pll_init:00000364 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:903    .text.pll_init:0000053c $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:910    .text.pee_pbe:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:915    .text.pee_pbe:00000000 pee_pbe
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1040   .text.pee_pbe:000000a8 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1046   .text.pbe_pee:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1051   .text.pbe_pee:00000000 pbe_pee
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1266   .text.pbe_pee:0000013c $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1272   .text.pbe_fbe:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1277   .text.pbe_fbe:00000000 pbe_fbe
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1406   .text.pbe_fbe:000000ac $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1412   .text.fbe_pbe:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1417   .text.fbe_pbe:00000000 fbe_pbe
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1757   .text.fbe_pbe:00000208 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1767   .text.pbe_blpe:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1772   .text.pbe_blpe:00000000 pbe_blpe
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1851   .text.pbe_blpe:00000064 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1856   .text.blpe_pbe:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:1861   .text.blpe_pbe:00000000 blpe_pbe
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:2173   .text.blpe_pbe:000001dc $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:2181   .text.blpe_fbe:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:2186   .text.blpe_fbe:00000000 blpe_fbe
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:2315   .text.blpe_fbe:000000b0 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:2321   .text.fbe_blpe:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:2326   .text.fbe_blpe:00000000 fbe_blpe
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:2405   .text.fbe_blpe:00000064 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:2410   .text.fbe_fei:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:2415   .text.fbe_fei:00000000 fbe_fei
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:7360   .text.fll_freq:00000000 fll_freq
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:2655   .text.fbe_fei:00000158 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:2663   .text.fei_fbe:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:2668   .text.fei_fbe:00000000 fei_fbe
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:3153   .text.fei_fbe:000002e4 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:3171   .text.fbe_fee:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:3176   .text.fbe_fee:00000000 fbe_fee
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:3376   .text.fbe_fee:00000130 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:3382   .text.fee_fbe:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:3387   .text.fee_fbe:00000000 fee_fbe
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:3511   .text.fee_fbe:000000a8 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:3517   .text.fbe_fbi:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:3522   .text.fbe_fbi:00000000 fbe_fbi
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:3936   .text.fbe_fbi:00000268 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:3946   .text.fbi_fbe:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:3951   .text.fbi_fbe:00000000 fbi_fbe
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:4446   .text.fbi_fbe:000002f4 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:4464   .text.fbi_blpi:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:4469   .text.fbi_blpi:00000000 fbi_blpi
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:4579   .text.fbi_blpi:0000009c $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:4584   .text.blpi_fbi:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:4589   .text.blpi_fbi:00000000 blpi_fbi
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:4699   .text.blpi_fbi:0000009c $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:4704   .text.fbi_fee:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:4709   .text.fbi_fee:00000000 fbi_fee
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:5215   .text.fbi_fee:00000314 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:5231   .text.fbi_fee:0000034c $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:5267   .text.fbi_fee:0000037c $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:5272   .text.fee_fbi:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:5277   .text.fee_fbi:00000000 fee_fbi
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:5660   .text.fee_fbi:00000234 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:5670   .text.fbi_fei:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:5675   .text.fbi_fei:00000000 fbi_fei
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:5913   .text.fbi_fei:00000154 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:5921   .text.fei_fbi:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:5926   .text.fei_fbi:00000000 fei_fbi
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:6271   .text.fei_fbi:00000200 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:6281   .text.fei_fee:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:6286   .text.fei_fee:00000000 fei_fee
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:6747   .text.fei_fee:000002c4 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:6765   .text.fee_fei:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:6770   .text.fee_fei:00000000 fee_fei
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:6927   .text.fee_fei:000000d8 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:6940   .text.atc:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:6945   .text.atc:00000000 atc
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:7697   .text.what_mcg_mode:00000000 what_mcg_mode
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:7339   .text.atc:0000027c $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:7355   .text.fll_freq:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:7677   .text.fll_freq:000001ac $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:7692   .text.what_mcg_mode:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:8010   .text.what_mcg_mode:000001d0 $d
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:8015   .text.clk_monitor_0:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:8020   .text.clk_monitor_0:00000000 clk_monitor_0
+C:\Users\ehughes\AppData\Local\Temp\ccYXDXqF.s:8072   .text.clk_monitor_0:0000003c $d
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

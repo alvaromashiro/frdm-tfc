@@ -13,7 +13,7 @@ void TFC_InitSysTick()
 	uint8_t i;
 	
 	for(i=0;i<NUM_TFC_TICKERS;i++)
-		TFC_Ticker[0] = 0;
+		TFC_Ticker[i] = 0;
 	
 	SYST_RVR = CORE_CLOCK/SYSTICK_FREQUENCY;
 	SYST_CSR = SysTick_CSR_ENABLE_MASK | SysTick_CSR_TICKINT_MASK | SysTick_CSR_CLKSOURCE_MASK;
