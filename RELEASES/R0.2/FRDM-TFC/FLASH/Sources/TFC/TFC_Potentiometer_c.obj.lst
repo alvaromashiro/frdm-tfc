@@ -1,0 +1,202 @@
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"TFC_Potentiometer.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.global	__aeabi_ui2f
+  18              		.global	__aeabi_f2d
+  19              		.global	__aeabi_ddiv
+  20              		.global	__aeabi_dadd
+  21              		.global	__aeabi_d2f
+  22              		.section	.text.TFC_ReadPot0,"ax",%progbits
+  23              		.align	2
+  24              		.global	TFC_ReadPot0
+  25              		.code	16
+  26              		.thumb_func
+  28              	TFC_ReadPot0:
+  29              	.LFB0:
+  30              		.file 1 "../Sources/TFC/TFC_Potentiometer.c"
+   1:../Sources/TFC/TFC_Potentiometer.c **** #include "TFC\TFC.h"
+   2:../Sources/TFC/TFC_Potentiometer.c **** 
+   3:../Sources/TFC/TFC_Potentiometer.c **** 
+   4:../Sources/TFC/TFC_Potentiometer.c **** //Pot Reading is Scaled to return a value of -1.0 to 1.0
+   5:../Sources/TFC/TFC_Potentiometer.c **** float TFC_ReadPot0()
+   6:../Sources/TFC/TFC_Potentiometer.c **** {
+  31              		.loc 1 6 0
+  32              		.cfi_startproc
+  33 0000 90B5     		push	{r4, r7, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 12
+  36              		.cfi_offset 4, -12
+  37              		.cfi_offset 7, -8
+  38              		.cfi_offset 14, -4
+  39 0002 83B0     		sub	sp, sp, #12
+  40              	.LCFI1:
+  41              		.cfi_def_cfa_offset 24
+  42 0004 00AF     		add	r7, sp, #0
+  43              	.LCFI2:
+  44              		.cfi_def_cfa_register 7
+   7:../Sources/TFC/TFC_Potentiometer.c **** 	float RetVal;
+   8:../Sources/TFC/TFC_Potentiometer.c **** 	RetVal = ((float)PotADC_Value[0]/-127.5)+1.0;
+  45              		.loc 1 8 0
+  46 0006 184B     		ldr	r3, .L2+16
+  47 0008 1B78     		ldrb	r3, [r3]
+  48 000a DBB2     		uxtb	r3, r3
+  49 000c 181C     		mov	r0, r3
+  50 000e FFF7FEFF 		bl	__aeabi_ui2f
+  51 0012 031C     		add	r3, r0, #0
+  52 0014 181C     		add	r0, r3, #0
+  53 0016 FFF7FEFF 		bl	__aeabi_f2d
+  54 001a 031C     		mov	r3, r0
+  55 001c 0C1C     		mov	r4, r1
+  56 001e 181C     		mov	r0, r3
+  57 0020 211C     		mov	r1, r4
+  58 0022 0E4B     		ldr	r3, .L2+4
+  59 0024 0C4A     		ldr	r2, .L2
+  60 0026 FFF7FEFF 		bl	__aeabi_ddiv
+  61 002a 031C     		mov	r3, r0
+  62 002c 0C1C     		mov	r4, r1
+  63 002e 181C     		mov	r0, r3
+  64 0030 211C     		mov	r1, r4
+  65 0032 0B4A     		ldr	r2, .L2+8
+  66 0034 0B4B     		ldr	r3, .L2+12
+  67 0036 FFF7FEFF 		bl	__aeabi_dadd
+  68 003a 031C     		mov	r3, r0
+  69 003c 0C1C     		mov	r4, r1
+  70 003e 181C     		mov	r0, r3
+  71 0040 211C     		mov	r1, r4
+  72 0042 FFF7FEFF 		bl	__aeabi_d2f
+  73 0046 031C     		add	r3, r0, #0
+  74 0048 7B60     		str	r3, [r7, #4]
+   9:../Sources/TFC/TFC_Potentiometer.c **** 	return RetVal;
+  75              		.loc 1 9 0
+  76 004a 7B68     		ldr	r3, [r7, #4]
+  10:../Sources/TFC/TFC_Potentiometer.c **** }
+  77              		.loc 1 10 0
+  78 004c 181C     		add	r0, r3, #0
+  79 004e BD46     		mov	sp, r7
+  80 0050 03B0     		add	sp, sp, #12
+  81              		@ sp needed for prologue
+  82 0052 90BD     		pop	{r4, r7, pc}
+  83              	.L3:
+  84 0054 C046C046 		.align	3
+  85              	.L2:
+  86 0058 00000000 		.word	0
+  87 005c 00E05FC0 		.word	-1067458560
+  88 0060 00000000 		.word	0
+  89 0064 0000F03F 		.word	1072693248
+  90 0068 00000000 		.word	PotADC_Value
+  91              		.cfi_endproc
+  92              	.LFE0:
+  94 006c C046C046 		.section	.text.TFC_ReadPot1,"ax",%progbits
+  95              		.align	2
+  96              		.global	TFC_ReadPot1
+  97              		.code	16
+  98              		.thumb_func
+ 100              	TFC_ReadPot1:
+ 101              	.LFB1:
+  11:../Sources/TFC/TFC_Potentiometer.c **** 
+  12:../Sources/TFC/TFC_Potentiometer.c **** 
+  13:../Sources/TFC/TFC_Potentiometer.c **** //Pot Reading is Scaled to return a value of -1.0 to 1.0
+  14:../Sources/TFC/TFC_Potentiometer.c **** float TFC_ReadPot1()
+  15:../Sources/TFC/TFC_Potentiometer.c **** {
+ 102              		.loc 1 15 0
+ 103              		.cfi_startproc
+ 104 0000 90B5     		push	{r4, r7, lr}
+ 105              	.LCFI3:
+ 106              		.cfi_def_cfa_offset 12
+ 107              		.cfi_offset 4, -12
+ 108              		.cfi_offset 7, -8
+ 109              		.cfi_offset 14, -4
+ 110 0002 83B0     		sub	sp, sp, #12
+ 111              	.LCFI4:
+ 112              		.cfi_def_cfa_offset 24
+ 113 0004 00AF     		add	r7, sp, #0
+ 114              	.LCFI5:
+ 115              		.cfi_def_cfa_register 7
+  16:../Sources/TFC/TFC_Potentiometer.c **** 	float RetVal;
+  17:../Sources/TFC/TFC_Potentiometer.c **** 	RetVal = ((float)PotADC_Value[1]/-127.5)+1.0;
+ 116              		.loc 1 17 0
+ 117 0006 184B     		ldr	r3, .L5+16
+ 118 0008 5B78     		ldrb	r3, [r3, #1]
+ 119 000a DBB2     		uxtb	r3, r3
+ 120 000c 181C     		mov	r0, r3
+ 121 000e FFF7FEFF 		bl	__aeabi_ui2f
+ 122 0012 031C     		add	r3, r0, #0
+ 123 0014 181C     		add	r0, r3, #0
+ 124 0016 FFF7FEFF 		bl	__aeabi_f2d
+ 125 001a 031C     		mov	r3, r0
+ 126 001c 0C1C     		mov	r4, r1
+ 127 001e 181C     		mov	r0, r3
+ 128 0020 211C     		mov	r1, r4
+ 129 0022 0E4B     		ldr	r3, .L5+4
+ 130 0024 0C4A     		ldr	r2, .L5
+ 131 0026 FFF7FEFF 		bl	__aeabi_ddiv
+ 132 002a 031C     		mov	r3, r0
+ 133 002c 0C1C     		mov	r4, r1
+ 134 002e 181C     		mov	r0, r3
+ 135 0030 211C     		mov	r1, r4
+ 136 0032 0B4A     		ldr	r2, .L5+8
+ 137 0034 0B4B     		ldr	r3, .L5+12
+ 138 0036 FFF7FEFF 		bl	__aeabi_dadd
+ 139 003a 031C     		mov	r3, r0
+ 140 003c 0C1C     		mov	r4, r1
+ 141 003e 181C     		mov	r0, r3
+ 142 0040 211C     		mov	r1, r4
+ 143 0042 FFF7FEFF 		bl	__aeabi_d2f
+ 144 0046 031C     		add	r3, r0, #0
+ 145 0048 7B60     		str	r3, [r7, #4]
+  18:../Sources/TFC/TFC_Potentiometer.c **** 	return RetVal;
+ 146              		.loc 1 18 0
+ 147 004a 7B68     		ldr	r3, [r7, #4]
+  19:../Sources/TFC/TFC_Potentiometer.c **** }
+ 148              		.loc 1 19 0
+ 149 004c 181C     		add	r0, r3, #0
+ 150 004e BD46     		mov	sp, r7
+ 151 0050 03B0     		add	sp, sp, #12
+ 152              		@ sp needed for prologue
+ 153 0052 90BD     		pop	{r4, r7, pc}
+ 154              	.L6:
+ 155 0054 C046C046 		.align	3
+ 156              	.L5:
+ 157 0058 00000000 		.word	0
+ 158 005c 00E05FC0 		.word	-1067458560
+ 159 0060 00000000 		.word	0
+ 160 0064 0000F03F 		.word	1072693248
+ 161 0068 00000000 		.word	PotADC_Value
+ 162              		.cfi_endproc
+ 163              	.LFE1:
+ 165 006c C046C046 		.text
+ 166              	.Letext0:
+ 167              		.file 2 "C:/ELI/BUSINESS/CLIENT_DATA/FREESCALE/frdm-tfc__google-code/DEVELOPMENT_TRUNK/FRDM-TFC/Pr
+ 168              		.file 3 "C:/Freescale/CW MCU v10.3/MCU/ARM_GCC_Support/ewl/EWL_C/include/cstdint"
+DEFINED SYMBOLS
+                            *ABS*:00000000 TFC_Potentiometer.c
+C:\Users\ehughes\AppData\Local\Temp\ccRxRd7j.s:23     .text.TFC_ReadPot0:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccRxRd7j.s:28     .text.TFC_ReadPot0:00000000 TFC_ReadPot0
+C:\Users\ehughes\AppData\Local\Temp\ccRxRd7j.s:86     .text.TFC_ReadPot0:00000058 $d
+C:\Users\ehughes\AppData\Local\Temp\ccRxRd7j.s:95     .text.TFC_ReadPot1:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccRxRd7j.s:100    .text.TFC_ReadPot1:00000000 TFC_ReadPot1
+C:\Users\ehughes\AppData\Local\Temp\ccRxRd7j.s:157    .text.TFC_ReadPot1:00000058 $d
+                     .debug_frame:00000010 $d
+C:\Users\ehughes\AppData\Local\Temp\ccRxRd7j.s:94     .text.TFC_ReadPot0:0000006c $t
+C:\Users\ehughes\AppData\Local\Temp\ccRxRd7j.s:165    .text.TFC_ReadPot1:0000006c $t
+
+UNDEFINED SYMBOLS
+__aeabi_ui2f
+__aeabi_f2d
+__aeabi_ddiv
+__aeabi_dadd
+__aeabi_d2f
+PotADC_Value
