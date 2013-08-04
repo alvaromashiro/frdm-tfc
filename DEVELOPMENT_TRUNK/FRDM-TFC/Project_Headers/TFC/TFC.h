@@ -22,7 +22,6 @@
 #include "TFC\TFC_Servo.h"
 #include "TFC\TFC_Motor.h"
 #include "TFC\TFC_ADC.h"
-#include "TFC\TFC_Potentiometer.h"
 #include "TFC\TFC_LineScanCamera.h"
 #include "TFC\TFC_Queue.h"
 #include "TFC\TFC_UART.h"

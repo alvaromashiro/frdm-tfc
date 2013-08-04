@@ -1,16 +1,15 @@
 #include "derivative.h" /* include peripheral declarations */
 #include "TFC\TFC.h"
 
-
 int main(void)
 {
 	uint32_t t,i=0;
-	TFC_Init();
 	
+	TFC_Init();
 	
 	for(;;)
 	{	   
-		//TFC_Task must be called in your main loop.  This keeps certain processing happy (I.E. Serial port queue check
+		//TFC_Task must be called in your main loop.  This keeps certain processing happy (I.E. Serial port queue check)
 			TFC_Task();
 
 			//This Demo program will look at the middle 2 switch to select one of 4 demo modes.
@@ -40,8 +39,6 @@ int main(void)
 					TFC_BAT_LED2_ON;
 				else
 					TFC_BAT_LED2_OFF;
-								
-			
 				
 				break;
 					
@@ -52,8 +49,8 @@ int main(void)
 				{
 					TFC_Ticker[0] = 0; //reset the Ticker
 					//Every 20 mSeconds, update the Servos
-					TFC_SetServo(0,TFC_ReadPot0());
-					TFC_SetServo(1,TFC_ReadPot1());
+					TFC_SetServo(0,TFC_ReadPot(0));
+					TFC_SetServo(1,TFC_ReadPot(1));
 				}
 				//Let's put a pattern on the LEDs
 				if(TFC_Ticker[1] >= 125)
@@ -77,7 +74,7 @@ int main(void)
 				
 				//Demo Mode 2 will use the Pots to make the motors move
 				TFC_HBRIDGE_ENABLE;
-				TFC_SetMotorPWM(TFC_ReadPot0(),TFC_ReadPot1());
+				TFC_SetMotorPWM(TFC_ReadPot(0),TFC_ReadPot(1));
 						
 				//Let's put a pattern on the LEDs
 				if(TFC_Ticker[1] >= 125)

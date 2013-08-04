@@ -7,9 +7,7 @@
 void TFC_InitTerminal();
 void TFC_ProcessTerminal();
 
-
 #if defined(TERMINAL_USE_SDA_SERIAL)
-
 	#define TERMINAL_OUT_QUEUE			SDA_SERIAL_OUTGOING_QUEUE
 	#define TERMINAL_IN_QUEUE			SDA_SERIAL_INCOMING_QUEUE
 	#define TERMINAL_PRINTF(...)   		Qprintf(&TERMINAL_OUT_QUEUE,__VA_ARGS__)  

@@ -1,12 +1,12 @@
 #include "TFC\TFC.h"
 
 
-volatile uint8_t  *LineScanImage0WorkingBuffer;
-volatile uint8_t  *LineScanImage1WorkingBuffer;
-volatile uint8_t  *LineScanImage0;
-volatile uint8_t  *LineScanImage1;
-volatile uint8_t  LineScanImage0Buffer[2][128];
-volatile uint8_t  LineScanImage1Buffer[2][128];
+volatile uint16_t  *LineScanImage0WorkingBuffer;
+volatile uint16_t  *LineScanImage1WorkingBuffer;
+volatile uint16_t  *LineScanImage0;
+volatile uint16_t  *LineScanImage1;
+volatile uint16_t  LineScanImage0Buffer[2][128];
+volatile uint16_t  LineScanImage1Buffer[2][128];
 volatile uint8_t  LineScanWorkingBuffer;
 
 volatile uint8_t LineScanImageReady = 0;
@@ -29,8 +29,8 @@ void TFC_InitLineScanCamera()
 
 	LineScanWorkingBuffer = 0;
 	
-	LineScanImage0WorkingBuffer = &LineScanImage0Buffer[LineScanWorkingBuffer][0];
-	LineScanImage1WorkingBuffer = &LineScanImage1Buffer[LineScanWorkingBuffer][0];
+	LineScanImage0WorkingBuffer = &LineScanImage0Buffer[0][0];
+	LineScanImage1WorkingBuffer = &LineScanImage1Buffer[0][0];
 	
 	LineScanImage0 = &LineScanImage0Buffer[1][0];
 	LineScanImage1 = &LineScanImage1Buffer[1][0];
