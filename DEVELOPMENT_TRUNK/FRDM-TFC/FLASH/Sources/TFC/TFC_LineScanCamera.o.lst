@@ -272,16 +272,16 @@ DEFINED SYMBOLS
                             *COM*:00000200 LineScanImage0Buffer
                             *COM*:00000200 LineScanImage1Buffer
                             *COM*:00000001 LineScanWorkingBuffer
-C:\Users\ehughes\AppData\Local\Temp\ccqby7qy.s:28     .bss.LineScanImageReady:00000000 LineScanImageReady
-C:\Users\ehughes\AppData\Local\Temp\ccqby7qy.s:29     .bss.LineScanImageReady:00000000 $d
-C:\Users\ehughes\AppData\Local\Temp\ccqby7qy.s:31     .text.TFC_InitLineScanCamera:00000000 $t
-C:\Users\ehughes\AppData\Local\Temp\ccqby7qy.s:36     .text.TFC_InitLineScanCamera:00000000 TFC_InitLineScanCamera
-C:\Users\ehughes\AppData\Local\Temp\ccqby7qy.s:126    .text.TFC_InitLineScanCamera:00000078 $d
-C:\Users\ehughes\AppData\Local\Temp\ccqby7qy.s:150    .text.TFC_SetLineScanExposureTime:00000000 $t
-C:\Users\ehughes\AppData\Local\Temp\ccqby7qy.s:155    .text.TFC_SetLineScanExposureTime:00000000 TFC_SetLineScanExposureTime
-C:\Users\ehughes\AppData\Local\Temp\ccqby7qy.s:212    .text.TFC_SetLineScanExposureTime:00000058 $d
+C:\Users\ehughes\AppData\Local\Temp\ccPwBOar.s:28     .bss.LineScanImageReady:00000000 LineScanImageReady
+C:\Users\ehughes\AppData\Local\Temp\ccPwBOar.s:29     .bss.LineScanImageReady:00000000 $d
+C:\Users\ehughes\AppData\Local\Temp\ccPwBOar.s:31     .text.TFC_InitLineScanCamera:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccPwBOar.s:36     .text.TFC_InitLineScanCamera:00000000 TFC_InitLineScanCamera
+C:\Users\ehughes\AppData\Local\Temp\ccPwBOar.s:126    .text.TFC_InitLineScanCamera:00000078 $d
+C:\Users\ehughes\AppData\Local\Temp\ccPwBOar.s:150    .text.TFC_SetLineScanExposureTime:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccPwBOar.s:155    .text.TFC_SetLineScanExposureTime:00000000 TFC_SetLineScanExposureTime
+C:\Users\ehughes\AppData\Local\Temp\ccPwBOar.s:212    .text.TFC_SetLineScanExposureTime:00000058 $d
                      .debug_frame:00000010 $d
-C:\Users\ehughes\AppData\Local\Temp\ccqby7qy.s:220    .text.TFC_SetLineScanExposureTime:0000006c $t
+C:\Users\ehughes\AppData\Local\Temp\ccPwBOar.s:220    .text.TFC_SetLineScanExposureTime:0000006c $t
 
 UNDEFINED SYMBOLS
 __aeabi_ui2d

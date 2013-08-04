@@ -998,24 +998,24 @@ DEFINED SYMBOLS
                             *COM*:0000000c SDA_SERIAL_INCOMING_QUEUE
                             *COM*:00000800 SDA_SERIAL_OUTGOING_QUEUE_Storage
                             *COM*:00000080 SDA_SERIAL_INCOMING_QUEUE_Storage
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:22     .text.TFC_InitUARTs:00000000 $t
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:27     .text.TFC_InitUARTs:00000000 TFC_InitUARTs
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:298    .text.uart0_init:00000000 uart0_init
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:131    .text.TFC_InitUARTs:000000a4 $d
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:146    .text.TFC_UART_Process:00000000 $t
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:151    .text.TFC_UART_Process:00000000 TFC_UART_Process
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:196    .text.TFC_UART_Process:00000038 $d
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:202    .text.UART0_IRQHandler:00000000 $t
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:207    .text.UART0_IRQHandler:00000000 UART0_IRQHandler
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:285    .text.UART0_IRQHandler:0000006c $d
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:293    .text.uart0_init:00000000 $t
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:634    .text.uart0_init:00000214 $d
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:644    .text.uart_getchar:00000000 $t
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:649    .text.uart_getchar:00000000 uart_getchar
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:690    .text.uart_putchar:00000000 $t
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:695    .text.uart_putchar:00000000 uart_putchar
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:739    .text.uart_getchar_present:00000000 $t
-C:\Users\ehughes\AppData\Local\Temp\ccSDKFu0.s:744    .text.uart_getchar_present:00000000 uart_getchar_present
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:22     .text.TFC_InitUARTs:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:27     .text.TFC_InitUARTs:00000000 TFC_InitUARTs
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:298    .text.uart0_init:00000000 uart0_init
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:131    .text.TFC_InitUARTs:000000a4 $d
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:146    .text.TFC_UART_Process:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:151    .text.TFC_UART_Process:00000000 TFC_UART_Process
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:196    .text.TFC_UART_Process:00000038 $d
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:202    .text.UART0_IRQHandler:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:207    .text.UART0_IRQHandler:00000000 UART0_IRQHandler
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:285    .text.UART0_IRQHandler:0000006c $d
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:293    .text.uart0_init:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:634    .text.uart0_init:00000214 $d
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:644    .text.uart_getchar:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:649    .text.uart_getchar:00000000 uart_getchar
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:690    .text.uart_putchar:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:695    .text.uart_putchar:00000000 uart_putchar
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:739    .text.uart_getchar_present:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\ccfcTAAL.s:744    .text.uart_getchar_present:00000000 uart_getchar_present
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

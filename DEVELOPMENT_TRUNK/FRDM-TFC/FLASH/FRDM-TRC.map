@@ -1267,7 +1267,7 @@ OUTPUT(FRDM-TRC.elf elf32-littlearm)
  .debug_aranges
                 0x00000748       0x58 C:/Freescale/CW MCU v10.4/MCU/ARM_GCC_Support/ewl/lib/armv6-m\librt.a(__arm_eabi_init.o)
 
-.debug_macinfo  0x00000000   0x22ce46
+.debug_macinfo  0x00000000   0x22cf06
  .debug_macinfo
                 0x00000000    0x264f0 ./Project_Settings/Startup_Code/kinetis_sysinit.o
  .debug_macinfo
@@ -1277,29 +1277,29 @@ OUTPUT(FRDM-TRC.elf elf32-littlearm)
  .debug_macinfo
                 0x0002d7b3    0x26567 ./Sources/TFC/TFC_arm_cm0.o
  .debug_macinfo
-                0x00053d1a    0x275c8 ./Sources/TFC/TFC_UART.o
+                0x00053d1a    0x275d8 ./Sources/TFC/TFC_UART.o
  .debug_macinfo
-                0x0007b2e2    0x2765c ./Sources/TFC/TFC_Terminal.o
+                0x0007b2f2    0x2766c ./Sources/TFC/TFC_Terminal.o
  .debug_macinfo
-                0x000a293e    0x27691 ./Sources/TFC/TFC_Servo.o
+                0x000a295e    0x276a1 ./Sources/TFC/TFC_Servo.o
  .debug_macinfo
-                0x000c9fcf    0x275c8 ./Sources/TFC/TFC_Queue.o
+                0x000c9fff    0x275d8 ./Sources/TFC/TFC_Queue.o
  .debug_macinfo
-                0x000f1597    0x27675 ./Sources/TFC/TFC_Motor.o
+                0x000f15d7    0x27685 ./Sources/TFC/TFC_Motor.o
  .debug_macinfo
-                0x00118c0c    0x275c8 ./Sources/TFC/TFC_LineScanCamera.o
+                0x00118c5c    0x275d8 ./Sources/TFC/TFC_LineScanCamera.o
  .debug_macinfo
-                0x001401d4    0x276bf ./Sources/TFC/TFC_CrystalClock.o
+                0x00140234    0x276cf ./Sources/TFC/TFC_CrystalClock.o
  .debug_macinfo
-                0x00167893    0x275c8 ./Sources/TFC/TFC_BoardSupport.o
+                0x00167903    0x275d8 ./Sources/TFC/TFC_BoardSupport.o
  .debug_macinfo
-                0x0018ee5b    0x275c8 ./Sources/TFC/TFC_ARM_SysTick.o
+                0x0018eedb    0x275d8 ./Sources/TFC/TFC_ARM_SysTick.o
  .debug_macinfo
-                0x001b6423    0x27e8b ./Sources/TFC/TFC_ADC.o
+                0x001b64b3    0x27e9b ./Sources/TFC/TFC_ADC.o
  .debug_macinfo
-                0x001de2ae    0x275c8 ./Sources/TFC/TFC.o
+                0x001de34e    0x275d8 ./Sources/TFC/TFC.o
  .debug_macinfo
-                0x00205876    0x275d0 ./Sources/main.o
+                0x00205926    0x275e0 ./Sources/main.o
 
 .debug_line     0x00000000     0x5c12
  .debug_line    0x00000000      0x244 ./Project_Settings/Startup_Code/kinetis_sysinit.o

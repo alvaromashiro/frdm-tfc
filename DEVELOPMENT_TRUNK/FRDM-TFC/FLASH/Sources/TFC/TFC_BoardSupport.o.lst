@@ -376,15 +376,15 @@
  300              		.file 3 "D:/ELI/BUSINESS/CLIENT_DATA/FREESCALE/frdm-tfc__google-code/DEVELOPMENT_TRUNK/FRDM-TFC/Pr
 DEFINED SYMBOLS
                             *ABS*:00000000 TFC_BoardSupport.c
-C:\Users\ehughes\AppData\Local\Temp\ccQoTaSn.s:18     .text.TFC_InitGPIO:00000000 $t
-C:\Users\ehughes\AppData\Local\Temp\ccQoTaSn.s:23     .text.TFC_InitGPIO:00000000 TFC_InitGPIO
-C:\Users\ehughes\AppData\Local\Temp\ccQoTaSn.s:147    .text.TFC_SetBatteryLED_Level:00000000 TFC_SetBatteryLED_Level
-C:\Users\ehughes\AppData\Local\Temp\ccQoTaSn.s:131    .text.TFC_InitGPIO:00000098 $d
-C:\Users\ehughes\AppData\Local\Temp\ccQoTaSn.s:142    .text.TFC_SetBatteryLED_Level:00000000 $t
-C:\Users\ehughes\AppData\Local\Temp\ccQoTaSn.s:243    .text.TFC_SetBatteryLED_Level:00000074 $d
-C:\Users\ehughes\AppData\Local\Temp\ccQoTaSn.s:248    .text.TFC_GetDIP_Switch:00000000 $t
-C:\Users\ehughes\AppData\Local\Temp\ccQoTaSn.s:253    .text.TFC_GetDIP_Switch:00000000 TFC_GetDIP_Switch
-C:\Users\ehughes\AppData\Local\Temp\ccQoTaSn.s:293    .text.TFC_GetDIP_Switch:00000028 $d
+C:\Users\ehughes\AppData\Local\Temp\cc1uJXmg.s:18     .text.TFC_InitGPIO:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\cc1uJXmg.s:23     .text.TFC_InitGPIO:00000000 TFC_InitGPIO
+C:\Users\ehughes\AppData\Local\Temp\cc1uJXmg.s:147    .text.TFC_SetBatteryLED_Level:00000000 TFC_SetBatteryLED_Level
+C:\Users\ehughes\AppData\Local\Temp\cc1uJXmg.s:131    .text.TFC_InitGPIO:00000098 $d
+C:\Users\ehughes\AppData\Local\Temp\cc1uJXmg.s:142    .text.TFC_SetBatteryLED_Level:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\cc1uJXmg.s:243    .text.TFC_SetBatteryLED_Level:00000074 $d
+C:\Users\ehughes\AppData\Local\Temp\cc1uJXmg.s:248    .text.TFC_GetDIP_Switch:00000000 $t
+C:\Users\ehughes\AppData\Local\Temp\cc1uJXmg.s:253    .text.TFC_GetDIP_Switch:00000000 TFC_GetDIP_Switch
+C:\Users\ehughes\AppData\Local\Temp\cc1uJXmg.s:293    .text.TFC_GetDIP_Switch:00000028 $d
                      .debug_frame:00000010 $d
 
 NO UNDEFINED SYMBOLS

@@ -2,6 +2,8 @@
 #ifndef TFC_CONFIG_H_
 #define TFC_CONFIG_H_
 
+#define RELEASE					"1.0"
+
 #define PCB_REV					A
 
 //A TFC Ticker is a variable that will increment every 1mS in the Systick interrupt routine
