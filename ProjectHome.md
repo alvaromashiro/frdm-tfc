@@ -1,0 +1,1 @@
+This project has example code for the Freescale FRDM-TFC shield.
